@@ -2,7 +2,7 @@ define(function (require) {
   var _ = require('lodash');
   // get the kibana/metric_vis module, and make sure that it requires the "kibana" module if it
   // didn't already
-  const module = require('ui/modules').get('kibana/para_vis', ['kibana']);
+  const module = require('ui/modules').get('kibana/Kibana_ParagraphGenerator', ['kibana']);
 
   module.controller('KbnParaVisController', function ($scope, Private) {
     const tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
