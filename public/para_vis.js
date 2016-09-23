@@ -1,9 +1,9 @@
 define(function (require) {
   // we need to load the css ourselves
-  require('plugins/para_vis/para_vis.less');
+  require('plugins/Kibana_ParagraphGenerator/para_vis.less');
 
   // we also need to load the controller and used by the template
-  require('plugins/para_vis/para_vis_controller.js');
+  require('plugins/Kibana_ParagraphGenerator/para_vis_controller.js');
 
   // register the provider with the visTypes registry
   require('ui/registry/vis_types').register(ParaVisProvider);
@@ -19,13 +19,13 @@ define(function (require) {
       title: 'Paragraph Generator',
       description: 'Create custom paragraphs/blocks of text with the addition of automatica paramters.',
       icon: 'fa-calculator',
-      template: require('plugins/para_vis/para_vis.html'),
+      template: require('plugins/Kibana_ParagraphGenerator/para_vis.html'),
       params: {
         defaults: {
           handleNoResults: true,
           fontSize: 60
         },
-        editor: require('plugins/para_vis/para_vis_params.html')
+        editor: require('plugins/Kibana_ParagraphGenerator/para_vis_params.html')
       },
       schemas: new Schemas([
         {
