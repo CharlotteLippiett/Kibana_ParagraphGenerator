@@ -3,7 +3,7 @@ define(function (require) {
   require('plugins/para_vis/para_vis.less');
 
   // we also need to load the controller and used by the template
-  require('plugins/para_vis/para_vis_controller');
+  require('plugins/para_vis/para_vis_controller.js');
 
   // register the provider with the visTypes registry
   require('ui/registry/vis_types').register(ParaVisProvider);
